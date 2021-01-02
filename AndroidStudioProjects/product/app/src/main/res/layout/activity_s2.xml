@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".S1"
+    android:background="@color/white">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="@drawable/bg">
+
+    <ImageButton
+        android:id="@+id/imageBack"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/ic_back_foreground"
+        android:clickable="true"
+        android:tint="#000000"
+        tools:ignore="VectorDrawableCompat" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:width="300dp"
+        android:text="Product Details"
+        android:paddingTop="15dp"
+        android:textSize="30dp"
+        android:shadowColor="#7F000000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:textAlignment="center"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="-5dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_home_foreground"
+        tools:ignore="VectorDrawableCompat" />
+  </LinearLayout>
+
+  <ImageView
+      android:id="@+id/productdetails"
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:layout_marginTop="75dp"
+      android:layout_weight="1"
+      app:srcCompat="@drawable/bowl" />
+  -------------------
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="300dp"
+      android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="206dp"
+          android:layout_height="wrap_content"
+          android:textSize="26dp"
+          android:text="Product Name"
+          android:paddingTop="30dp"
+          android:paddingLeft="20dp"
+          android:shadowColor="#7F000000"
+          android:shadowDx="3"
+          android:shadowDy="4"
+          android:shadowRadius="5"/>
+
+      <ImageButton
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:src="@drawable/ic_cart_foreground"
+          android:paddingLeft="100dp"
+          android:layout_gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="206dp"
+          android:layout_height="wrap_content"
+          android:textSize="32dp"
+          android:text="Price"
+          android:textColor="#FF0000"
+          android:textStyle="bold"
+          android:paddingLeft="20dp"
+          android:shadowColor="#7F000000"
+          android:shadowDx="3"
+          android:shadowDy="4"
+          android:shadowRadius="5"/>
+      <TextView
+          android:layout_width="206dp"
+          android:layout_height="wrap_content"
+          android:textSize="32dp"
+          android:text="Rp.42.000"
+          android:textColor="@color/black"
+          android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <RatingBar
+          android:id="@+id/ratingBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:numStars="5"
+          android:rating="3.5" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="3.5/5"
+          android:textSize="28dp"
+          android:layout_marginLeft="10dp"
+          android:textStyle="bold"
+          android:paddingTop="37dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_round2"
+        android:orientation="vertical">
+      <LinearLayout
+          android:id="@+id/product1"
+          android:layout_width="wrap_content"
+          android:layout_height="80dp"
+          android:orientation="horizontal"
+          android:clickable="true"
+          android:layout_marginLeft="40dp"
+          android:layout_marginRight="40dp"
+          android:background="@drawable/storename"
+          android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_saleimg3_foreground"
+            tools:srcCompat="@drawable/ic_store_foreground" />
+        <TextView
+            android:id="@+id/Producttxt1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="28sp"
+            android:gravity="left"
+            android:paddingRight=""
+            android:text="Store Name" />
+        <ImageButton
+            android:id="@+id/right_icon"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_favorite_foreground"
+            android:clickable="true"
+            android:tint="#000000"/>
+      </LinearLayout>
+
+      <Button
+          android:layout_width="200dp"
+          android:layout_height="65dp"
+          android:layout_marginLeft="100dp"
+          android:layout_marginTop="20dp"
+          android:gravity="center"
+          android:text="Purchase Now"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="18dp"
+          app:backgroundTint="@android:color/holo_orange_dark"
+          android:clickable="true"/>
+    </LinearLayout>
+
+  </LinearLayout>
+</RelativeLayout>
